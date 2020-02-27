@@ -3,7 +3,7 @@
       <span class="left">
           <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
       </span>
-      <btn class="btnDownLoad">APP下载</btn>
+      <btn class="btnDownLoad" @click.native="download()">APP下载</btn>
   </div>
 </template>
 
@@ -12,6 +12,12 @@ import btn from "../core/btn"
 export default {
     components: {
         btn
+    },
+    methods: {
+        // 跳转到APP下载界面
+        download () {
+            this.$router.push({name: "download"})
+        }
     }
 }
 </script>
