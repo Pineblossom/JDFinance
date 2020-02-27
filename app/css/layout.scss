@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@mixin flex($drection:column,$inlent:block) {
-    display: if($inlent == block,flex,inlint-flex);
-    flex-direction: $drection;
+@mixin flex($direction:column,$inlent:block) {
+    display: if($inlent==block,flex,inline-flex);
+    flex-direction: $direction;
     flex-wrap: wrap;
 }
