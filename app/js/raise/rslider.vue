@@ -60,6 +60,7 @@ export default {
         overflow: hidden;
         padding-left: 177px;
         background: url(//m.jr.jd.com/spe/qyy/main/images/scroll_title_img.png) left top no-repeat;
+        background-size: 23%;
     }
 }
 
